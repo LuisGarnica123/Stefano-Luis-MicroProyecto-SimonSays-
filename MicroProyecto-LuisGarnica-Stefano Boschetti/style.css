@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f7f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+
+.marcador {
+    font-family: 'Arial', sans-serif ;
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.panel {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.panel {
+    height: 200px;
+    width: 200px;
+    outline: none;
+    cursor: pointer;
+}
+
+.iniciar {
+    margin-top: 20px;
+}
+
+#green {
+    border-top-left-radius: 200px;
+    background-color: rgb(17, 155, 17);
+}
+
+.blink-green {
+    background-color: rgb(221, 255, 221);
+}
+
+
+#red {
+    border-top-right-radius: 200px;
+    background-color: rgb(255, 23, 23);
+}
+
+.blink-red {
+    background-color: rgb(248, 205, 205);
+}
+
+#blue {
+    border-bottom-right-radius: 200px;
+    background-color: rgb(59, 121, 255);
+}
+
+.blink-blue {
+    background-color: rgb(211, 225, 255);
+    
+}
+
+#yellow {
+    border-bottom-left-radius: 200px;
+    background-color: rgb(255, 255, 31); 
+}
+
+.blink-yellow {
+    background-color: rgb(255, 255, 206); 
+}
+
