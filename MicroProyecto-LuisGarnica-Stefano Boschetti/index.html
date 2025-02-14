@@ -9,29 +9,43 @@
 </head>
 <body>
         <div class="menu">
-            <div class="title">Simon Dice</div>
+            <h1 class="title">Simon Says</h1>
             <input type="text" id="jugadornombre" placeholder="Ingresa tu nombre:">
             <button class="iniciar">Iniciar</button>
-            <h2>Tabla de Puntaje</h2>
-            <table id="mejorespuntajes"><thead>
-                <tr>
-                    <th>Jugador</th>
-                    <th>Puntaje</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
-        </div1>
-        <div class="marcador">
-            <h3 class="current-score">Puntaje: 0</h3>
-            
-        </div2>
-        <div class="panel">
-            <button class="panel verde" id="green"></button>
-            <button class="panel rojo" id="red"></button>
-            <button class="panel amarillo" id="yellow"></button>
-            <button class="panel azul" id="blue"></button>
         </div>
+        <div class="panel-container">
+            <div class="panel">
+                <div class="top-panel">
+                    <button id="green"/>
+                    <button id="red"/>
+                </div>
+                <div class="current-score">
+                    <div>00</div>
+                </div>
+                <div class="bottom-panel">
+                    <button id="yellow"/>
+                    <button id="blue"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="highscores">
+            <h2>HighScores</h2>
+                <table id="mejorespuntajes"><thead>
+                    <tr>
+                        <th>Jugador</th>
+                        <th>Puntaje</th>
+                    </tr>
+                    <tr>
+                        <td>Luisillo</td>
+                        <td>666</td>
+                    </tr>
+
+                    </thead>
+                    <tbody></tbody>
+            </table>
+        </div>
+
         <script src="script.js"></script>
 </body>
 </html>
