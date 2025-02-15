@@ -1,1 +1,5 @@
-# Stefano-Luis-MicroProyecto-SimonSays-
+# MicroProyecto Sistemas de Informacion (Sección 4).
+
+Integrantes:
+- Stefano Boschetti
+- Luis Garnica
