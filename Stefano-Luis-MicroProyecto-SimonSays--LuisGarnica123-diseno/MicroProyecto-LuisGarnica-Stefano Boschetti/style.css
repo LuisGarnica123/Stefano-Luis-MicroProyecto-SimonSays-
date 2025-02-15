@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: monospace;
     text-align: center;
     background-color: #131010;
     color: white;
@@ -7,11 +7,36 @@ body {
     padding: 2.5%;
 }
 
-.menu h1{
+h1{
     margin: 0;
+    font-family: fantasy;
+    letter-spacing: 6px;
+    font-weight: 500;
+}
+
+@media (max-width: 500px) {
+    #red, #yellow, #blue, #green{
+        width: 175px!important;
+        height: 175px!important;
+    }
+}
+
+@media (max-width: 400px) {
+    #red, #yellow, #blue, #green{
+        width: 150px!important;
+        height: 150px!important;
+    }
+}
+
+@media (max-width: 320px) {
+    #red, #yellow, #blue, #green{
+        width: 125px!important;
+        height: 125px!important;
+    }
 }
 
 .menu input{
+    font-family: monospace;
     height: 25px;
     border-radius: 5px;
     outline: none;
@@ -20,13 +45,26 @@ body {
 }
 
 .menu button{
+    font-family: monospace;
     height: 30px;
-    width: 60px;
     border-radius: 5px;
     outline: none;
     border: none;
-    padding-left: 10px;
+    padding: 0 10px 0 10px;
     font-size: 14px;
+}
+
+.reiniciar-btn{
+    font-family: monospace;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 0 10px 0 10px;
+    font-size: 14px;
+    background-color: #ff4f4f;
+    color: #000000;
+    font-weight: bold;
 }
 
 .panel-container {
@@ -37,6 +75,7 @@ body {
 
 .panel button{
     cursor: pointer;
+    outline: none;
 }
 
 .iniciar {
@@ -80,21 +119,12 @@ body {
     border-color: #0d750d;
 }
 
-#green:active {
-    background-color: #ddffdd;
-}
-
-
 #red {
     height: 200px;
     width: 200px;
     border-top-right-radius: 200px;
     background-color: #ff1717;
     border-color: #ad0f0f;
-}
-
-#red:active {
-    background-color: #f8cdcd;
 }
 
 #blue {
@@ -105,21 +135,12 @@ body {
     border-color:#254ca0;
 }
 
-#blue:active {
-    background-color: #d3e1ff;
-    
-}
-
 #yellow {
     height: 200px;
     width: 200px;
     border-bottom-left-radius: 200px;
     background-color: #ffff1f; 
     border-color: #a3a315
-}
-
-#yellow:active {
-    background-color: #ffffce; 
 }
 
 .highscores{
@@ -137,6 +158,11 @@ body {
 .highscores th, td{
     border: white 1px solid;
     padding: 5px 0 5px 0;
+}
+
+.inactivo{
+    pointer-events: none;
+    opacity: 0.30;
 }
 
 #green.activo {
@@ -158,4 +184,8 @@ body {
 #reinicar{
     padding: 10px 20px; 
     margin: 10px;
+}
+
+.not-visible{
+    display: none;
 }

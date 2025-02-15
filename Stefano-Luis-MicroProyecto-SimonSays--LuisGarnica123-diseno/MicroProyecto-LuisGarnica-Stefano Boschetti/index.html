@@ -7,13 +7,17 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
-<body>
+<body>  
+        <h1 class="title">Simon Says</h1>
         <div class="menu">
-            <h1 class="title">Simon Says</h1>
             <input type="text" id="jugadornombre" placeholder="Ingresa tu nombre:">
             <button class="iniciar">Iniciar</button>
         </div>
-        <div class="panel-container">
+        <div class="menu-restart not-visible">
+            <h2 class="goodluck">Buena suerte!</h2>
+            <button class="reiniciar-btn">Reiniciar Juego</button>
+        </div>
+        <div class="panel-container inactivo">
             <div class="panel">
                 <div class="top-panel">
                     <button id="green"></button>
@@ -29,9 +33,9 @@
             </div>
         </div>
         <div id="game-over-container" style="display: none; text-align: center; margin: 20px;">
-            <h2 style="color: red;">¡Juego Terminado!</h2>
+            <h2 style="color: red;">¡GAME OVER!</h2>
             <p id="mensaje-final"></p>
-            <button id="reiniciar-btn">Reiniciar Juego</button>
+            <button class="reiniciar-btn">Reiniciar Juego</button>
         </div>
         <div class="highscores">
             <h2>HighScores</h2>
@@ -40,11 +44,6 @@
                         <th>Jugador</th>
                         <th>Puntaje</th>
                     </tr>
-                    <tr>
-                        <td>Luisillo</td>
-                        <td>666</td>
-                    </tr>
-
                     </thead>
                     <tbody></tbody>
             </table>
