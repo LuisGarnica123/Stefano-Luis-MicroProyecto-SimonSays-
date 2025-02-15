@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const audioStart = new Audio('./audios/START.mp3');
     // Con esto rellenamos la tabla de mejores puntuaciones desde el Local Storage
     let topPlayers = localStorage.getItem("score")? localStorage.getItem("score").split(",") : ""
-    topPlayers.sort((a,b) =>  parseInt(a.split(":")[1]) - parseInt(b.split(":")[1]) ).reverse()
+    if (topPlayers) topPlayers.sort((a,b) =>  parseInt(a.split(":")[1]) - parseInt(b.split(":")[1]) ).reverse()
     for (score of topPlayers.slice(0,10)){
         let aux = score.split(":")
         let nuevaFila = document.createElement("tr");
