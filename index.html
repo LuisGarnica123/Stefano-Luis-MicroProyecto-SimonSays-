@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>  
+        <h1 class="title">Simon Says</h1>
+        <div class="menu">
+            <input type="text" id="jugadornombre" placeholder="Ingresa tu nombre:">
+            <button class="iniciar">Iniciar</button>
+        </div>
+        <div class="menu-restart not-visible">
+            <h2 class="goodluck">Buena suerte!</h2>
+            <button class="reiniciar-btn">Reiniciar Juego</button>
+        </div>
+        <div class="panel-container inactivo">
+            <div class="panel">
+                <div class="top-panel">
+                    <button id="green"></button>
+                    <button id="red"></button>
+                </div>
+                <div class="current-score">
+                    <div>00</div>
+                </div>
+                <div class="bottom-panel">
+                    <button id="yellow"></button>
+                    <button id="blue"></button>
+                </div>
+            </div>
+        </div>
+        <div id="game-over-container" style="display: none; text-align: center; margin: 20px;">
+            <h2 style="color: red;">¡GAME OVER!</h2>
+            <p id="mensaje-final"></p>
+            <button class="reiniciar-btn">Reiniciar Juego</button>
+        </div>
+        <div class="highscores">
+            <h2>HighScores</h2>
+                <table id="mejorespuntajes"><thead>
+                    <tr>
+                        <th>Jugador</th>
+                        <th>Puntaje</th>
+                    </tr>
+                    </thead>
+                    <tbody></tbody>
+            </table>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+</html>
